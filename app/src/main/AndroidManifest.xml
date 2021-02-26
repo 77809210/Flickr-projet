@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flickrproject">
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- allows app to go to internet-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- allows app to go to network-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FlickrProject">
+        <activity android:name=".ListActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
